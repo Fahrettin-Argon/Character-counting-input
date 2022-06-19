@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #0f0f0f, #2f1d2e, #5d2338, #86302b, #995000);
+}
+
+.wrapper {
+    background-color: rgb(0, 0, 0, 0.7);
+    max-width: 780px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 25px 25px 15px 25px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ffffff;
+    color: #fff;
+    margin: 1rem;
+}
+
+.input-box {
+    padding-top: 10px;
+    border-bottom: 2px solid #d6d6d6;
+}
+
+.input-box .tweet-area {
+    position: relative;
+    min-height: 450px;
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+.tweet-area::-webkit-scrollbar {
+    width: 3px;
+}
+
+.tweet-area::-webkit-scrollbar-thumb {
+    background-color: #8a8a8a;
+    width: 3px;
+}
+
+.tweet-area .placeholder {
+    position: absolute;
+    margin-top: -3px;
+    font-size: 22px;
+    color: #98A5B1;
+    pointer-events: none;
+}
+
+.tweet-area .input {
+    outline: none;
+    font-size: 17px;
+    min-height: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.tweet-area .editable {
+    position: relative;
+    z-index: 5;
+}
+
+.tweet-area .readonly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: transparent;
+    background: transparent;
+}
+
+.bottom {
+    display: flex;
+    margin-top: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom .counter {
+    color: #eee;
+    display: none;
+    font-weight: 650;
+    margin-right: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #aab8c2;
+    border-left: 1px solid #aab8c2;
+}
